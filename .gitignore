@@ -1,8 +1,8 @@
 # CFL data and generated results
 data/*
-!data/description.md
+!data/README.md
 results/*
-!results/description.md
+!results/README.md
 logs/*
 
 # Byte-compiled / optimized / DLL files
