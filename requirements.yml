@@ -1,0 +1,30 @@
+# to create a conda environment from this file, run the commands:
+#     conda env create -f requirements.yml
+#     conda activate cfl-env
+
+# to generate a new version of this file from the current environment, run the 
+# command:
+#     conda env export --from-history > requirementsNEW.yml
+
+# this environment should contain the packages necessary to run the demo 
+# notebooks in the CFL documentation.
+
+name: cfl-env
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - numpy=1.19.2 # array manipulation and fast computing
+  - scikit-learn=0.23.2 # used for clustering methods, other algorithms/metrics
+  - matplotlib=3.3.1  # creates plots (used for visualization)
+  - joblib=0.16.0 # used to save/load data primarily for el nino example
+  - optuna=2.10.0 # hyperparameter tuning
+  - keras # define optimization objects for CDE training
+  - jupyter # for jupyter notebooks
+  - ipykernel # to add dependencies to kernel during set-up
+  - pandas=1.1.1 # for formatting data frames (eg used for fear mice data)
+
+  - pip
+      - cfl # latest version

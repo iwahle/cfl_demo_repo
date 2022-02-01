@@ -1,3 +1,10 @@
+# CFL data and generated results
+data/*
+!data/description.md
+results/*
+!results/description.md
+logs/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
